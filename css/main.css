@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap');
+
+.arrow{
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: -15%;
+    border-radius: 10vw;
+    border: thin black solid;
+    animation: upNdown alternate infinite 2s;
+}
+.l_arrow{
+    margin: 1rem auto;
+    width: .1vw;
+    height: 2vw;
+    background-color: black;
+}
+
+header{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    top: 0%;
+    align-items: center;
+    padding: 2rem;
+}
+header>img{
+    max-width: 8rem;
+}
+nav>ul{
+    display: flex;
+    font-family: 'Anek Latin';
+    justify-content: flex-end;
+    margin-right: 2rem;
+    font-size: 2rem;
+    gap: 2rem;
+    font-weight: 500;
+}
+ul>Li>a{
+    color: rgb(61, 61, 61);
+}
+
+.HeroBan{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:radial-gradient(
+        rgba(43, 43, 43, 0.692)8%,
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 2vmin 2vmin;
+    border: thin rgb(255, 255, 255) solid;
+    border-radius: 4rem;
+    width: 100%;
+    box-shadow: rgb(255, 255, 255) inset 0px 0px 1000px 100px ;
+}
+.HeroBan>h1{
+    font-size: 8rem;
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: rgb(61, 61, 61);
+    background-color: #fff;
+    padding: 8rem;
+    border-radius: 16rem;
+    margin-bottom: 4rem;
+}
+.HeroBan>.btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.HeroBan>.btn>button{
+    padding: 2rem 4rem 2rem 4rem;
+    border: .5rem rgb(89, 147, 255) solid;
+    border-radius: 4rem;
+    background-color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(89, 147, 255);
+    cursor: pointer;
+}
+.HeroBan>.btn>button:nth-child(2){
+    color: #fff;
+    background-color: rgb(89, 147, 255);
+}
+
+.test-content{
+    background:radial-gradient(
+        rgba(88, 88, 88, 0.548)8%,
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 2vmin 2vmin;
+    width: 100%;
+    height:  100%;
+}
+.about{
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+}
+.skills{
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.blob { 
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3CradialGradient id=%22radialGradientId%22 r=%22100%25%22 cx=%2250%25%22 cy=%2250%25%22 %3E %3Cstop offset=%220%25%22 stop-color=%22%2300DBDE%22 %2F%3E %3Cstop offset=%22100%25%22 stop-color=%22%23FC00FF%22 %2F%3E %3C%2FradialGradient%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M638.5%2C699.5Q500%2C899%2C275.5%2C699.5Q51%2C500%2C275.5%2C269Q500%2C38%2C638.5%2C269Q777%2C500%2C638.5%2C699.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23radialGradientId)%22 d=%22M638.5%2C699.5Q500%2C899%2C275.5%2C699.5Q51%2C500%2C275.5%2C269Q500%2C38%2C638.5%2C269Q777%2C500%2C638.5%2C699.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+    box-shadow: inset 2rem .2rem .2rem .2rem;
+  }
+  .about{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    font-family: 'Roboto';
+  }
+  .about article{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .about article h2{
+      margin : 1rem;
+      font-size: 4rem;
+      font-weight: 900;
+      color: rgb(61, 61, 61);
+  }
+  .about p{
+      font-size: 2rem;
+      margin: 1rem;
+      max-width: 30vw;
+  }
+  .parcours h2,.skills h2{
+    font-family: 'Roboto';
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgb(61, 61, 61);
+    text-align: center;
+  }
+
+  h1::after{
+      animation: wording infinite 8s linear alternate;
+      content: "";
+  }
+
+  @keyframes wording {
+    0% {
+        content: "Bonjour";
+        color: rgb(61, 61, 61);
+      }
+      12.5% {
+        color: white;
+        
+      }
+      25% {
+        content: "Hello";
+        color: rgb(61, 61, 61);
+      }
+      37.5%{
+          color: #fff;
+      }
+      50% {
+          content: "Bonjourno";
+          color: rgb(61, 61, 61);
+      }
+      62.5%{
+        color: #fff;
+      }
+      75%{
+        content: "Buenos Dias";
+        color: rgb(61, 61, 61);
+      }
+      87.5%{
+        color: white;
+      }
+      100%{
+        content: "Guten tag";
+        color: rgb(61, 61, 61);
+      }
+  }
+
+  @keyframes upNdown {
+      from{
+          transform: translateY(0rem);
+      }
+      to{
+          transform: translateY(1rem);
+      }
+  }
