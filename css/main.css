@@ -7,7 +7,7 @@
     position: relative;
     bottom: -15%;
     border-radius: 10vw;
-    border: .3rem rgba(37, 37, 37, 0.603) solid;
+    border: .1rem rgba(37, 37, 37, 0.603) solid;
     animation: upNdown alternate infinite 1s;
 }
 .l_arrow{
@@ -39,7 +39,7 @@
     border-radius: 1rem;
 }
 .arrow:hover{
-    transition: all 0.8s ease-in-out;
+    transition: all 0.3s ease-in-out;
     filter: invert();
 }
 
@@ -188,7 +188,7 @@ figcaption:nth-child(2){
   }
   .about article h2{
       margin : 1rem;
-      font-size: 4rem;
+      font-size: 6rem;
       font-weight: 900;
       color: rgb(61, 61, 61);
   }
@@ -202,7 +202,7 @@ figcaption:nth-child(2){
   }
   .parcours h2,.skills h2{
     font-family: 'Roboto';
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 900;
     color: rgb(61, 61, 61);
     text-align: center;
@@ -247,7 +247,7 @@ figcaption:nth-child(2){
     );
     background-position: 0% 0%;
     background-size: 1vmin 1vmin;
-    box-shadow: rgba(182, 182, 182, 0.658) 1px 1px 50px 2px;
+    box-shadow: rgba(182, 182, 182, 0.658) 1px 1px 30px 2px;
     gap: 2rem;
     
   }
@@ -268,11 +268,51 @@ figcaption:nth-child(2){
       animation: slide ease-in-out 1.3s; 
   }
   .skills>h2{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       color: #fff;
   }
   .skills{
     color: #fff;
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    height: fit-content;
+    padding-bottom: 4rem;
+ 
+  }
+  .skills-list{
+      display: flex;
+      flex-direction: column;
+      max-width: 80rem;
+      margin: auto;
+      gap: 2rem;
+  }
+  .skills-list>li{
+      display: flex;
+      padding: 2rem;
+      border-radius: 1rem;
+      background-color: white;
+      color: rgb(37, 37, 37);
+  }
+  .skills-list>li>div{
+      margin-left: 2rem;
+  }
+  .skills-list>li>img{
+      width: 10rem;
+      height: 10rem;
+      border: thin rgb(37, 37, 37) solid;
+      border-radius: 2rem;
+  }
+  .skills-list>li>div>h3{
+      font-family: 'Roboto';
+      font-size: 3rem;
+      font-weight: 900;
+      padding-bottom: .5rem;
+      border-bottom: .25rem dashed rgba(82, 79, 255, 0.521);
+      margin-bottom: .5rem;
+  }
+  .skills-list>li>div>p{
+    font-family: 'Roboto';
+    font-size: 2rem;
   }
 @keyframes slide {
     0% {
