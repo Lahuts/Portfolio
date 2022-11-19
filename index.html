@@ -13,15 +13,15 @@
       <img src="/asset/lp.svg" alt="Logo Lahuts" />
       <nav>
         <ul>
-          <li><a href=""></a></li>
-          <li><a href="">Experience pro</a></li>
-          <li><a href="">Etudes</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#1">Accueil</a></li>
+          <li><a href="#2">about</a></li>
+          <li><a href="#3">parcours</a></li>
+          <li><a href="#4">skills</a></li>
+          <li><a href="#5">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="HeroBan">
+    <section class="HeroBan" id="1">
       <h1></h1>
       <div class="btn">
         <button>Github</button>
@@ -32,7 +32,7 @@
       </div>
     </section>
     <main>
-      <section class="about">
+      <section class="about" id="2">
         <article>
           <h2>Me concernant</h2>
           <p>
@@ -49,7 +49,7 @@
         </figure>
         </p>
       </section>
-      <section class="parcours">
+      <section id="3" class="parcours">
         <h2>Mon Parcours pro</h2>
           <ul class="card-container">
               <li>
@@ -101,7 +101,7 @@
         </li>
           </ul>
       </section>
-      <section class="skills">
+      <section class="skills" id="4">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L48,256C96,224,192,160,288,117.3C384,75,480,53,576,85.3C672,117,768,203,864,197.3C960,192,1056,96,1152,90.7C1248,85,1344,171,1392,213.3L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
           <h2>Skills</h2>
           <ul class="skills-list">
@@ -135,9 +135,57 @@
               </li>
           </ul>
       </section>
-      <section class="Contact">
+      <section class="contact" id="5">
+        <article>
+          <h2>Contact</h2>
+          <ul class="res">
+            <li>
+              <h3>Par Linkedin</h3>
+              <a href="https://www.linkedin.com/in/alexis-huet-dev/"><img src="/asset/linkedin.png" alt=""></a>
+            </li>
+            <li>
+              <h3>Par Mail</h3>
+              <p>alexis.huet.m@gmail.com</p>
+            </li>
+            <li>
+              <h3>Par Codingame</h3>
+              <a href="https://www.codingame.com/profile/18e1ab1f96b582dcbbbbe1e382f847c71351544"><img src="/asset/codingame.svg" alt=""></a>
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="med">
+        <h2>Suivez-nous</h2>
+        <a href="https://www.linkedin.com/in/alexis-huet-dev/"><img src="asset/linkedin.png" alt=""></a>
+      </div>
+      <div>
+        <h2>Présentation</h2>
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="pages/metiers/platerie.html">Presentation</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <h2>Compétence</h2>
+        <ul>
+          <li><a href="pages/entreprise/histoire.html">Parcours Pro</a></li>
+          <li><a href="pages/entreprise/rse.html">Skills</a></li>
+
+        </ul>
+      </div>
+      <ul class="copy_list">
+        <li>
+           Copyright &copy; 2022 Lahuts. All rights reserved.
+        </li>
+        <li>
+          <a href="">mentions légales</a>
+        </li>
+        <li>
+          <a href="">gestion des cookies</a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
