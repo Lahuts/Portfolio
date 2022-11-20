@@ -105,17 +105,19 @@ ul>Li>a{
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
-.HeroBan>.btn>button{
+.HeroBan>.btn>a{
     padding: 2rem 4rem 2rem 4rem;
     border: .5rem rgb(89, 147, 255) solid;
     border-radius: 4rem;
     background-color: #fff;
     font-size: 2rem;
     font-weight: 900;
+    font-family: 'Roboto';
     color: rgb(89, 147, 255);
     cursor: pointer;
+    text-align: center;
 }
-.HeroBan>.btn>button:nth-child(2){
+.HeroBan>.btn>a:nth-child(2){
     color: #fff;
     background-color: rgb(89, 147, 255);
 }
@@ -477,5 +479,85 @@ footer>div>ul>li>a{
       }
       to{
           transform: translateY(1rem);
+      }
+  }
+  @media  (max-width:917px) {
+      header>nav>ul>li{
+          font-size: 1.6rem;
+
+      }
+      .HeroBan>h1{
+          padding: 1rem;
+      }
+      .HeroBan>.btn>a{
+          padding-top: .5rem;
+          padding-bottom: .5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          align-content: center;
+      }
+      h1::after{
+          font-size: 3rem;
+      }
+      .about>article>h2,.parcours>h2{
+          font-size: 4rem;
+      }
+      .about>article>p{
+          max-width: 90%;
+          margin-bottom: 2rem;
+      }
+      .about{
+          display: block;
+      }
+      .parcours{
+          height: fit-content;
+      }
+      .card-container{
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(4,1fr);
+          overflow:visible;
+          height: 100%;
+      }
+      .skills-list{
+          margin-left: 1rem;
+          margin-right:1rem ;
+      }
+      .skills-list>li{
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+      }
+      .contact{
+        height: fit-content;
+        padding-bottom: 2rem;
+      }
+
+      .res{
+          display: block;
+      }
+      .res>li{
+          margin: 0;
+          gap: 0;
+      }
+      .res>li>a>img{
+          width: 8rem;
+          margin: 2rem;
+      }
+      .res>li>h3{
+          font-size: 3rem;
+          margin: 2rem;
+      }
+      .res>li>p{
+          font-size: 2rem;
+      }
+      footer>div>h2{
+          font-size: 1.6rem;
+      }
+      .med>a>img{
+          width: 5rem;
+      }
+      .copy_list>li,.copy_list>li>a{
+          font-size: 1rem;
       }
   }
