@@ -47,7 +47,7 @@ html{
 }
 
 header{
-    position: absolute;
+    position: sticky;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: rgb(255, 255, 255);
@@ -55,9 +55,11 @@ header{
     top: 0%;
     align-items: center;
     padding: 2rem;
+    box-shadow: 0px 0px 10px 5px rgba(197, 197, 197, 0.7);
+
 }
 header>img{
-    max-width: 8rem;
+    max-width: 4rem;
 }
 nav>ul{
     display: flex;
@@ -66,10 +68,16 @@ nav>ul{
     margin-right: 2rem;
     font-size: 2rem;
     gap: 2rem;
-    font-weight: 500;
+    font-weight: 200;
+    letter-spacing: .2rem;
+    color: rgb(122, 122, 122);
 }
-ul>Li>a{
+nav>ul>Li>a{
     color: rgb(61, 61, 61);
+}
+nav>ul>li>a:hover{
+    transition: .3s;
+    color: rgb(0, 132, 255);
 }
 
 .HeroBan{
@@ -120,8 +128,21 @@ ul>Li>a{
 .HeroBan>.btn>a:nth-child(2){
     color: #fff;
     background-color: rgb(89, 147, 255);
-}
+    transform: .3s;
 
+}
+.HeroBan>.btn>a:nth-child(2):hover{
+    transition: .3s;
+    color: #fff;
+    background-color: rgb(89, 147, 255);
+    box-shadow: inset 0px 0px 5px 1px rgba(95, 94, 80, 0.493);
+
+}
+.HeroBan>.btn>a:nth-child(1):hover{
+    transition: .3s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 5px 1px rgba(12, 12, 12, 0.493);
+}
 .test-content{
     background:radial-gradient(
         rgba(88, 88, 88, 0.548)8%,
@@ -482,6 +503,12 @@ footer>div>ul>li>a{
       }
   }
   @media  (max-width:917px) {
+      header>nav>ul{
+          letter-spacing: normal;
+      }
+      header{
+          gap: 1rem;
+      }
       header>nav>ul>li{
           font-size: 1.6rem;
 
@@ -552,7 +579,11 @@ footer>div>ul>li>a{
           font-size: 2rem;
       }
       footer>div>h2{
+          text-align: center;
           font-size: 1.6rem;
+      }
+      footer>div>ul>li{
+          text-align: center;
       }
       .med>a>img{
           width: 5rem;
