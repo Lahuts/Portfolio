@@ -93,7 +93,7 @@ main{
     border-left: thin solid #0352ff;
     text-align: center;
 }
-.last-project>h2{
+.btn-doc{
     padding-top: 3rem;
     padding-bottom: 3rem;
     width: 100%;
@@ -224,8 +224,95 @@ border-bottom: #0352ff thin solid;
     background-color: #0352ff;
     color: #ffffff;
 }
+.btn-doc{
+    cursor: pointer;
+}
 
 
+.modal-document{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.disabled{
+    z-index: -10;
+    opacity: 0;
+}
+
+.modal-document>section{
+    background-color: #fff;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.modal-document>section>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    width: fit-content;
+    background-color: #f0f0ef;
+    padding: 2vw;
+    border-radius: 1rem;
+}
+.modal-document>section>ul>li{
+    width: fit-content;
+}
+.modal-document>section>ul>li>a>img{
+    width: 10vw;
+    height: 10vw;
+}
+.modal-document>section>h3{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.close-cross{
+    content: ' ';
+    position: relative;
+    width: 1rem;
+    height: 2px;
 
 
-
+}
+.close-cross::before{
+    position: absolute;
+    content: ' ';
+    width: 1rem;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: #181818;
+}
+.close-cross::after{
+    position: absolute;
+    content: ' ';
+    width: 1rem;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #181818;
+}
