@@ -1,0 +1,53 @@
+
+.aboutme{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    border-bottom: thin solid #0352ff;
+    margin-bottom: 5rem;
+}
+.aboutme>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: thin solid #0352ff;
+
+}
+.aboutme>div>h2,h3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    font-weight: 800;
+}
+.aboutme>div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.aboutme>div>p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    max-width: 50%;
+}
+.passion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.passion>div>div>p{
+    margin: auto;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    max-width: 50%;
+}
+.passion>div>img{
+    margin-bottom: 5rem;
+    border: #0352ff thin solid;
+}
