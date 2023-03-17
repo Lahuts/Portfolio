@@ -104,6 +104,11 @@ main{
     font-size: 2.5rem;
     font-weight: 800;
     border-bottom: thin solid #ffffff;
+    transition: all 0.5s ease;
+}
+.btn-doc:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 
 .dev{
@@ -316,3 +321,85 @@ border-bottom: #0352ff thin solid;
     transform: rotate(-45deg);
     background-color: #181818;
 }
+
+@media (max-width: 917px){
+    .herobanner{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-doc{
+        margin-bottom: 2rem;
+    }
+    h2{
+        font-size: 5rem;
+        text-align: center;
+        margin: auto;
+    }
+    .contactdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn_contact{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contact>div>h2{
+        font-size: 3rem;
+        text-align: center;
+        margin: auto;
+    }
+    .herobanner>.pres>p, .herobanner>.pres>a ,.projects>p, .projects>a{
+        font-size: 1.6rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    .herobanner>.pres, .projects{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar{
+        display: none;
+    }
+    .projects{
+        margin : 5%
+    }
+    .project_grid{
+        display: block;
+    }
+    .project_grid>li{
+        margin-bottom: 1rem;
+    }
+    .grid_right{
+        position: relative;
+        top: 0;
+    }
+    main{
+        margin: 0;
+        transform: translateY(3%);
+    }
+    section{
+        padding: 0;
+    }
+
+    header{
+        width: 100%;
+        margin-left: 0;
+    }
+    header>a{
+        width: 30%;
+    }
+    .contact>div>h2{
+        margin-top: 2rem;
+    }
+    .modal-document>section>h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+    
