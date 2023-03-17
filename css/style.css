@@ -31,7 +31,39 @@ main{
     margin-top: 5%;
     font-size: 7rem;
     font-weight: 800;
+    animation: opacity 2s ease;
 }
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes appearingRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes appearingLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+    
+
 .herobanner>div>p{
     margin-top: 3rem;
     margin-bottom: 5rem;
@@ -175,6 +207,12 @@ border-bottom: #0352ff thin solid;
 .grid_right{
     position: relative;
     top: -10rem;
+}
+.appear_left{
+    animation: appearingLeft 2s ease;
+}
+.appear_right{
+    animation: appearingRight 1.5s ease;
 }
 
 .contact{
