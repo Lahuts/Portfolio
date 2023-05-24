@@ -34,9 +34,9 @@ header>div
     width: 100%;  
 }
 header>div>a>h1{
-    font-size: 2rem;
-    font-weight: 600;
-    color: #2326ff;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #202020;
     margin-left: 3vw;
 }
 header>div>a>h1>span{

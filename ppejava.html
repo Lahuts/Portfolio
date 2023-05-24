@@ -1,0 +1,761 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Portfolio/css/reset.css">
+    <link rel="stylesheet" href="/Portfolio/css/headernavfooter.css">
+    <link rel="stylesheet" href="/Portfolio/css/style.css">
+    <link rel="manifest" href="/Portfolio/favicon/manifest.webmanifest">
+    <link rel="shortcut icon" href="/Portfolio/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Portfolio/css/projet.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+    <title>/Portfolio Alexis Huet</title>
+    <link rel="stylesheet" href="/Portfolio/css/dracula.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><h1> Lahuts</h1></a>
+        </div>
+        <a href="contact.html">CONTACT</a>
+    </header>
+    <nav class="sidebar">
+       <div class="container_burger">
+        <div class="btn_burger"></div>
+       </div>
+
+        <ul class="hidden_nav">
+            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="about.html">A PROPOS</a></li>
+            <li><a href="projets.html">PROJETS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="veille.html">VEILLE IT</a></li>
+        </ul>
+    </nav>
+<main>
+    <h1 class="project_h1">M2L JAVA</h1>
+    <section>
+        <ul>
+           <h2>Contexte :</h2>
+                <p>
+                    Un des responsables de la M2L, utilise une application pour gérer les employés des ligues. L’application est mise à votre disposition par le biais des ressources suivantes :
+                </p>
+                <ul>
+                    <li>Le code source sur Github.</li>
+                    <li>La documentation.</li>
+                    <li>Une bibliothèque logiciel de dialogue en ligne de commande, disponible dans ce dépôt.</li>
+                </ul>
+                <p>Cette application, très simple, n’existe qu’en ligne de commande et est mono-utilisateur. Nous souhaiterions désigner un administrateur par ligue et lui confier la tâche de recenser les employés de sa ligue. Une partie du travail est déjà faite mais vous allez devoir le compléter.</p>
+        </ul>
+        <h2>Spécification du besoin</h2>
+        <p>Les niveaux d’habilitation des utilisateurs sont les suivants :</p>
+        <ul>
+            <li>Un simple employé de ligue peut ouvrir l’application et s’en servir comme un annuaire, mais il ne dispose d’aucun droit d’écriture.
+            </li>
+            <li>Un employé par ligue est admininstrateur et dispose de droits d’écriture peut gérer la liste des emloyés de sa propre ligue avec une application bureau.
+            </li>
+            <li>
+                Le super-admininstrateur a accès en écriture à tous les employés des ligues. Il peut aussi gérer les comptes des administrateurs des ligues avec une application accessible en ligne de commande.
+            </li>
+            <li>L’application doit être rendue multi-utilisateurs grace à l’utilisation d’une base de données.
+            </li>
+            <li>
+                Les trois niveaux d’habilitation ci-dessus doivent être mis en place.
+            </li>
+        </ul>
+        <h2>Contraintes</h2>
+        <ul>
+            <li>Conserver java pour l’application</li>
+            <li>Utiliser le versionnement avec git</li>
+            <li>Utiliser la bibliothèque de dialogue en ligne de commande fournie</li>
+            <li>Utiliser une base de données relationnelle</li>
+        </ul>
+        <h2>Travail à réaliser</h2>
+        <ul>
+            <li>
+                <h3>Itération 1 :</h3>
+                <ul>
+                    <li>Modélisation d’une base de données avec un MCD.</li>
+                    <li>Vérification du fonctionnement correct de l’application grâce à des tests unitaires.</li>
+                    <li>Gestion de la date de départ et de celle d’arrivée de chaque employé (couche métier + tests unitaires).</li>
+                    <li>Représentation des menus du dialogue en ligne de commande avec un arbre heuristique (Utilisez un logiciel de type Freemind).
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Itération 2 :</h3>
+                <ul>
+                    <li>Création de la base de données et production du script de création de tables.</li>
+                    <li>Gestion des dates dans le dialogue en ligne de commande.</li>
+                    <li>Dans le dialogue en ligne de commande, un employé doit être selectionné avant que l’on puisse choisir de modifier ou de supprimer.
+                    </li>
+                    <li>Possibilité de changer l’administrateur d’une ligue en ligne de commande.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Itération 3 :</h3>
+                <ul>
+                    <li>Création d’une classe fille de Passerelle permettant de gérer le dialogue avec la base de données avec JDBC (ou avec Hibernate si vous le souhaitez).</li>
+                    <li>Utilisation de la base de données pour réaliser les opérations d’ajout, de modification, de suppression des ligues et des employés.</li>
+                    <li>Modélisation de l’interface graphique avec des maquettes.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Itération 4 :</h3>
+                <ul>
+                    <li>Création d’une interface graphique (Swing ou JavaFx) pour que les administrateurs puissent gérer les ligues.</li>
+                    <li>Si une ligue n’a pas d’administrateur, c’est automatiquement le root qui devient l’administrateur de la ligue (avec les tests unitaires correspondants).</li>
+                    <li>Rédaction d’un mode opératoire succint à l’usage des administrateurs.</li>
+                    <li>Rédaction d’une page web dans le portefolio pour présenter le projet : explications, diagrammes, captures d’écran, liens vers les sources, le sujet, et la documentation.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Technologies utilisées</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaFx</li>
+            <li>Git</li>
+            <li>MySQL</li>
+            <li>Figma</li>
+        </ul>
+        <h2>
+            Compétences acquises : 
+        </h2>
+        <ul>
+            <li>Concevoir une base de données relationnelle</li>
+            <li>Concevoir une application Java</li>
+            <li>Concevoir une interface graphique</li>
+            <li>Utiliser un logiciel de versionnement</li>
+            <li>Utiliser un logiciel de maquettage</li>
+        </ul>
+        <h2>Répartition des taches</h2>
+        <pre>
+            <code>
+        Itération 1: <br>
+        └── Modélisation de la base de données (@SurfingChiken)<br>
+        └── Vérification du fonctionnement via des tests unitaires (@Withs)<br>
+        └── Gestion des dates de départ et d'arrivée des employés (@Withs)<br>
+        └── Représentation des menus du dialogue en ligne de commande (@Lahuts)<br>
+        
+        Itération 2:<br>
+        └── Création de la base de données et du script de création des tables (@SurfingChicken)<br>
+        └── Gestion des dates dans le dialogue en ligne de commande (@Withs)<br>
+        └── Sélection de l'employé dans le dialogue en ligne de commande (@Lahuts)<br>
+        └── Modification de l'administrateur d'une ligue en ligne de commande (@Lahuts)<br>
+        
+        Itération 3:<br>
+        └── Création d'une classe fille de Passerelle pour gérer la base de données (@Lahuts)<br>
+        └── Utilisation de la base de données pour les opérations d'ajout, de modification et de suppression (@Lahuts)<br>
+        └── Modélisation de l'interface graphique avec des maquettes (@Lahuts)<br>
+        
+        Itération 4:<br>
+        └── Création de l'interface graphique pour la gestion des ligues (@Lahuts)<br>
+        └── Attribution automatique de l'administrateur si nécessaire (@Withs)<br>
+        └── Rédaction du mode opératoire pour les administrateurs (@SurfingChicken)<br>
+        └── Création de la page web du projet dans le portefolio (@All)<br>
+            </code>
+        </pre>
+    </section>
+    <section>
+        <h2>
+            Itérations 1 : 
+        </h2>
+        <h3>
+            Modélisation de la base de données
+        </h3>
+        <p>
+            <img src="/Portfolio/asset/ppejava/mcd.png" alt="MCD">
+        </p>
+        <h3>
+            Vérification du fonctionnement via des tests unitaires
+        </h3>
+        <p>
+            <pre>
+                <code>
+                    package testsUnitaires;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+import personnel.*;
+
+class testEmployer
+{
+	GestionPersonnel gestionPersonnel = GestionPersonnel.getGestionPersonnel();
+	
+	@Test
+	void test_date_arrive() throws SauvegardeImpossible {
+		LocalDate now = LocalDate.now();
+		Employe an_employer = new Employe(null, null, "bob", "", "", "toor", now, now);
+		assertEquals(an_employer.getArrive(), now);
+	}
+	@Test
+	void test_date_depart() throws SauvegardeImpossible {
+		LocalDate now = LocalDate.now();
+		Employe an_employer = new Employe(null, null, "bob", "", "", "toor", now, now);
+		assertEquals(an_employer.getDepart(), now);
+	}
+	
+	@Test
+	void test_date_depart_bad_text() throws SauvegardeImpossible {
+		LocalDate now = LocalDate.now();
+		Employe an_employer = new Employe(null, null, "bob", "", "", "toor", now, now);
+	    assertThrows(DateTimeParseException.class, () -> {
+	    	an_employer.setDepart("hello-12-07");
+	    });
+	}
+	@Test
+	void test_date_arrive_bad_text() throws SauvegardeImpossible {
+		LocalDate now = LocalDate.now();
+		Employe an_employer = new Employe(null, null, "bob", "", "", "toor", now, now);	
+	    assertThrows(DateTimeParseException.class, () -> {
+	    	an_employer.setArrive("hello-12-07");
+	    });
+	}
+	
+	@Test
+	void test_date_depart_before() throws SauvegardeImpossible {
+		LocalDate now = LocalDate.now();
+		Employe an_employer = new Employe(null, null, "bob", "", "", "toor", now, now);
+	    assertThrows(MauvaiseDate.class, () -> {
+	    	an_employer.setDepart("2002-12-07");
+	    });
+	}
+	@Test
+	void test_date_arrive_before() throws SauvegardeImpossible {
+		LocalDate now = LocalDate.now();
+		Employe an_employer = new Employe(null, null, "bob", "", "", "toor", now, now);
+	    assertThrows(MauvaiseDate.class, () -> {
+	    	an_employer.setArrive("2002-12-07");
+	    });
+	}
+	@Test
+	void test_date_depart_add_before_date_arrive() throws MauvaiseDate, SauvegardeImpossible {
+		LocalDate now = LocalDate.now();
+		Employe an_employer = new Employe(null, null, "bob", "", "", "toor", null, null);
+		an_employer.setArrive("2022-12-07");
+	    assertThrows(MauvaiseDate.class, () -> {
+	    	an_employer.setDepart("2021-12-07");
+	    });
+	}
+	
+}
+
+                </code>
+            </pre>
+        </p>
+        <h3>
+            Gestion des dates de départ et d'arrivée des employés
+        </h3>
+        <p>
+            <pre>
+                <code>
+                    public void setDepart(String with_date) throws DateTimeParseException, MauvaiseDate,SauvegardeImpossible {
+                        LocalDate date = LocalDate.parse(with_date);
+                        this.setDepart(date);
+                    }
+                    public void setArrive(String with_date) throws MauvaiseDate,SauvegardeImpossible {
+                        LocalDate date = LocalDate.parse(with_date);
+                        this.setArrive(date);
+                    }
+                </code>
+            </pre>
+        </p>
+        <h3>
+            Représentation des menus du dialogue en ligne de commande
+        </h3>
+        <p>
+            <img src="/Portfolio/asset/ppejava/heuris.png" alt="Menus">
+        </p>
+    </section>
+    <section>
+        <h2>
+            Itération 2 : 
+        </h2>
+        <h3>
+            Création de la base de données et du script de création des tables
+        </h3>
+
+            <pre>
+                <code>
+                    -- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1
+-- Généré le : ven. 24 mars 2023 à 14:07
+-- Version du serveur : 10.4.27-MariaDB
+-- Version de PHP : 8.1.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données : `ligues`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `employe`
+--
+
+CREATE TABLE `employe` (
+  `id` int(42) NOT NULL,
+  `nom` varchar(42) DEFAULT NULL,
+  `premom` varchar(42) DEFAULT NULL,
+  `mail` varchar(42) DEFAULT NULL,
+  `password` varchar(42) DEFAULT NULL,
+  `datearrive` varchar(42) DEFAULT NULL,
+  `datedepart` varchar(42) DEFAULT NULL,
+  `id_ligue` int(42) DEFAULT NULL,
+  `id_role` int(42) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `employe`
+--
+
+
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `ligue`
+--
+
+CREATE TABLE `ligue` (
+  `id` int(42) NOT NULL,
+  `nom` varchar(42) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `ligue`
+--
+
+
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `role`
+--
+
+CREATE TABLE `role` (
+  `id` int(42) NOT NULL,
+  `nom` varchar(42) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `employe`
+--
+ALTER TABLE `employe`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_role` (`id_role`),
+  ADD KEY `id_ligue` (`id_ligue`);
+
+--
+-- Index pour la table `ligue`
+--
+ALTER TABLE `ligue`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `role`
+--
+ALTER TABLE `role`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `employe`
+--
+ALTER TABLE `employe`
+  MODIFY `id` int(42) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT pour la table `ligue`
+--
+ALTER TABLE `ligue`
+  MODIFY `id` int(42) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT pour la table `role`
+--
+ALTER TABLE `role`
+  MODIFY `id` int(42) NOT NULL AUTO_INCREMENT;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `employe`
+--
+ALTER TABLE `employe`
+  ADD CONSTRAINT `employe_ibfk_1` FOREIGN KEY (`id_role`) REFERENCES `role` (`id`),
+  ADD CONSTRAINT `employe_ibfk_2` FOREIGN KEY (`id_ligue`) REFERENCES `ligue` (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+                </code>
+            </pre>
+            <h3>Base de données</h3>
+            <img src="/Portfolio/asset/ppejava/db.png" alt="">
+            <h3>Table</h3>
+            <img src="/Portfolio/asset/ppejava/table.png" alt="">
+            <h3>Employe</h3>
+            <img src="/Portfolio/asset/ppejava/employe.png" alt="">
+            <h3>Ligue</h3>
+            <img src="/Portfolio/asset/ppejava/ligue.png" alt="">
+            <h3>Role</h3>
+            <img src="/Portfolio/asset/ppejava/role.png" alt="">
+
+            <h3>
+                gestion des dates de départ et d'arrivée des employés dans la application en ligne de commande
+            </h3>
+            <pre>
+                <code>
+                    private Option changerDateDepart(final Employe employe) {
+                        return new Option("Modifier la date de départ","d",()->
+                        {			
+                            try 
+                            {
+                                employe.setDepart(getString("Veuillez saisir la date au format (année-mois-jour) : "));
+                            } 
+                            catch (DateTimeParseException e) 
+                            {
+                                System.out.println("Format incorrect | format : année-mois-jour");
+                            }
+                            catch (MauvaiseDate e) 
+                            {
+                                System.out.println("Veuillez saisir une date superieur à "+employe.getArrive());
+                                
+                            } catch (SauvegardeImpossible e) {
+                                // TODO Auto-generated catch block
+                                e.printStackTrace();
+                            }
+                        });
+                    }
+                    
+                    private Option changerDateArrive(final Employe employe) {
+                        return new Option("Modifier la date d'arrivé","f",()->
+                        {			
+                            try 
+                            {
+                                try {
+                                    employe.setArrive(getString("Veuillez saisir la date au format (année-mois-jour) : "));
+                                } catch (SauvegardeImpossible e) {
+                                    // TODO Auto-generated catch block
+                                    e.printStackTrace();
+                                }
+                            } 
+                            catch (DateTimeParseException e) 
+                            {
+                                System.out.println("Format incorrect | format : année-mois-jour");
+                            }
+                            catch (MauvaiseDate e) 
+                            {
+                                System.out.println("Veuillez saisir une date inférieur à "+employe.getDepart());
+                                
+                            }
+                        });
+                    }
+                </code>
+            </pre>
+            <h3>Sélection de l'employé dans le dialogue en ligne de commande </h3>
+            <pre>
+                <code>
+                    private List<Employe> selectionEmploye(final Ligue ligue)
+                        {
+                            return new List<>("Selectionner un employé","p",
+                                    () -> new ArrayList<>(ligue.getEmployes()),
+                                    employeConsole.gestionEmploye()
+                                    );
+                        }
+                </code>
+            </pre>
+            <h3>
+                Changer l'administrateur d'une ligue en ligne de commande
+            </h3>
+            <pre>
+                <code>
+                    private List<Employe> changerAdministrateur(final Ligue ligue)
+                        {
+                            return new List<>("Changer l'aministrateur ", "a", 
+                                    () -> new ArrayList<>(ligue.getEmployes()),
+                                    (index, element) -> {ligue.setAdministrateur(element);}
+                                    );
+                        }		
+                    
+                </code>
+            </pre>
+            <h2>
+                Itération 3 :
+            </h2>
+            <h3>Création d’une classe fille de Passerelle permettant de gérer le dialogue avec la base de données avec JDBC <br>
+                Utilisation de la base de données pour réaliser les opérations d’ajout, de modification, de suppression des ligues et des employés.
+            </h3>
+            <pre>
+                <code>
+                    package jdbc;
+
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.time.LocalDate;
+
+import personnel.*;
+
+public class JDBC implements Passerelle 
+{
+	Connection connection;
+
+	public JDBC()
+	{
+		try
+		{
+			System.out.println("new JDBC");
+			Class.forName(Credentials.getDriverClassName());
+			connection = DriverManager.getConnection(Credentials.getUrl(), Credentials.getUser(), Credentials.getPassword());
+			System.out.println(this);
+		}
+		catch (ClassNotFoundException e)
+		{
+			System.out.println("Pilote JDBC non installé.");
+		}
+		catch (SQLException e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	@Override
+	public GestionPersonnel getGestionPersonnel() 
+	{
+		GestionPersonnel gestionPersonnel = new GestionPersonnel();
+		try 
+		{
+			String requete = "select * from ligue";
+			Statement instruction = connection.createStatement();
+			ResultSet ligues = instruction.executeQuery(requete);
+			while (ligues.next())
+			{
+				gestionPersonnel.addLigue(ligues.getInt(1), ligues.getString(2));
+			}
+			for(Ligue ligue : gestionPersonnel.getLigues()) {
+				String requeteEmp = "SELECT * from employe where `id_ligue` = "+ligue.getId();
+				Statement instructionEmp = connection.createStatement();
+				ResultSet employes = instructionEmp.executeQuery(requeteEmp);
+				while(employes.next())
+				{
+					try {
+						ligue.addEmploye(employes.getString(2), employes.getString(3), employes.getString(4), employes.getString(5),LocalDate.parse(employes.getString(6)),employes.getInt(1));
+					} catch (SauvegardeImpossible e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+		catch (SQLException e)
+		{
+			System.out.println(e);
+		}
+		return gestionPersonnel;
+	}
+	
+	public String[] checkAdmin() {
+		try {
+			String requeteAdmin = "SELECT mail,password FROM employe WHERE id = -1";
+			Statement instructionAdmn = connection.createStatement();
+			ResultSet admin = instructionAdmn.executeQuery(requeteAdmin);
+			if(admin.next()) {
+				return new String[] {admin.getString(1),admin.getString(2)} ;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	@Override
+	public void sauvegarderGestionPersonnel(GestionPersonnel gestionPersonnel) throws SauvegardeImpossible 
+	{
+		close();
+	}
+	
+	public void close() throws SauvegardeImpossible
+	{
+		try
+		{
+			if (connection != null)
+				connection.close();
+		}
+		catch (SQLException e)
+		{
+			throw new SauvegardeImpossible(e);
+		}
+	}
+	
+	@Override
+	public int insert(Ligue ligue) throws SauvegardeImpossible 
+	{
+		try 
+		{
+			PreparedStatement instruction;
+			instruction = connection.prepareStatement("insert into ligue (nom) values(?)", Statement.RETURN_GENERATED_KEYS);
+			instruction.setString(1, ligue.getNom());		
+			instruction.executeUpdate();
+			ResultSet id = instruction.getGeneratedKeys();
+			id.next();
+			System.out.println(id);
+			return id.getInt(1);
+		} 
+		catch (SQLException exception) 
+		{
+			exception.printStackTrace();
+			throw new SauvegardeImpossible(exception);
+		}		
+	}
+	@Override
+	public int insertEmploye(Employe employe) throws SauvegardeImpossible
+	{
+		try 
+		{
+			PreparedStatement instruction;
+			instruction = connection.prepareStatement("INSERT into employe (nom,premom,mail,password,id_ligue,DateArrive) values(?,?,?,?,?,?)",Statement.RETURN_GENERATED_KEYS);
+			instruction.setString(1,employe.getNom());
+			instruction.setString(2,employe.getPrenom());
+			instruction.setString(3,employe.getMail());
+			instruction.setString(4,employe.getPassword());
+			instruction.setInt(5,employe.getLigue().getId());
+			instruction.setString(6,employe.getArrive().toString());
+//			instruction.setString(7,employe.getDepart().toString());
+			instruction.executeUpdate();
+			ResultSet id = instruction.getGeneratedKeys();
+			id.next();
+			System.out.println(id);
+			return id.getInt(1);
+		}
+		catch(SQLException exception)
+		{
+			exception.printStackTrace();
+			throw new SauvegardeImpossible(exception);
+		}
+		
+	}
+	
+
+	@Override
+	public void delete(Ligue ligue) throws SauvegardeImpossible {
+		// TODO Auto-generated method stub
+		PreparedStatement instruction;
+		try {
+			instruction = connection.prepareStatement("DELETE FROM employe WHERE `id_ligue` = ?",Statement.RETURN_GENERATED_KEYS);
+			instruction.setInt(1,ligue.getId());
+			instruction.executeUpdate();
+			
+			instruction = connection.prepareStatement("DELETE FROM ligue WHERE `id` = ?",Statement.RETURN_GENERATED_KEYS);
+			instruction.setInt(1,ligue.getId());
+			instruction.executeUpdate();
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new SauvegardeImpossible(e);
+		}
+		
+	}
+
+	@Override
+	public void deleteEmploye(Employe employe) throws SauvegardeImpossible {
+		
+		PreparedStatement instruction;
+		try {
+			instruction = connection.prepareStatement("DELETE FROM employe WHERE `id` = ?",Statement.RETURN_GENERATED_KEYS);
+			instruction.setInt(1,employe.getId());
+			instruction.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new SauvegardeImpossible(e);
+		}
+	}
+
+	@Override
+	public int update(Ligue ligue) throws SauvegardeImpossible {
+		PreparedStatement instruction;
+		try {
+			instruction = connection.prepareStatement("Update ligue SET nom = ? WHERE `id` = ?",Statement.RETURN_GENERATED_KEYS);
+			instruction.setString(1,ligue.getNom());
+			instruction.setInt(2,ligue.getId());
+			instruction.executeUpdate();
+			
+	
+			return 0;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new SauvegardeImpossible(e);
+		}
+	}
+
+	@Override
+	public int updateEmploye(Employe employe,String columnName,String value) throws SauvegardeImpossible {
+		PreparedStatement instruction;
+		try {
+			instruction = connection.prepareStatement("Update employe SET "+columnName+" = ? WHERE `id` = ?",Statement.RETURN_GENERATED_KEYS);
+			instruction.setString(1,value);
+			instruction.setInt(2,employe.getId());
+			instruction.executeUpdate();
+	
+			return 0;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new SauvegardeImpossible(e);
+		}
+	}
+}
+                </code>
+            </pre>
+            <h3>
+                Modélisation de l’interface graphique avec des maquettes.
+            </h3>
+            <embed src="/Portfolio/asset/ppejava/views.pdf" width="1200" height="800" type="application/pdf"/>
+
+            <h2>Itération 4 : </h2>
+            <h2>CETTE ETAPE N'A PAS ENCORE ETAIT REALISER</h2>
+    </section>
+
+</main>
+    <footer>
+        <p>© 2023 Lahuts</p>
+    </footer>
+</body>

@@ -91,7 +91,7 @@ main{
     margin: 10%;
 }
 .projects>h2{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
     font-size: 5rem;
     font-weight: 800;
@@ -161,38 +161,38 @@ main{
     border: thin solid #0352ff;
     width: 100%;
 }
-.project_grid>li>figure>img{
+.project_grid>li>a>figure>img{
 width: 100%;
 border-bottom: #0352ff thin solid;
 }
-.project_grid>li>figure{
+.project_grid>li>a>figure{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.project_grid>li>figure>figcaption>h3{
+.project_grid>li>a>figure>figcaption>h3{
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
 }
-.project_grid>li>figure>figcaption{
+.project_grid>li>a>figure>figcaption{
     padding: 2rem;
     font-size: 1.6rem;
     font-weight: 600;
     color: #181818;
 }
-.project_grid>li>figure>figcaption>p{
+.project_grid>li>a>figure>figcaption>p{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.project_grid>li>figure>figcaption>ul{
+.project_grid>li>a>figure>figcaption>ul{
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     width: fit-content;
     gap: 1rem;
 }
-.project_grid>li>figure>figcaption>ul>li{
+.project_grid>li>a>figure>figcaption>ul>li{
     display: flex;
     align-items: center;
     justify-content: center;
