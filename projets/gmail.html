@@ -1,0 +1,744 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/headernavfooter.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../favicon/manifest.webmanifest">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/projet.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+    <title>Portfolio Alexis Huet</title>
+    <link rel="stylesheet" href="../css/dracula.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/Portfolio/index.html"><h1> Lahuts</h1></a>
+        </div>
+        <a href="/Portfolio/contact.html">CONTACT</a>
+    </header>
+    <nav class="sidebar">
+       <div class="container_burger">
+        <div class="btn_burger"></div>
+       </div>
+
+        <ul class="hidden_nav">
+            <li><a href="/Portfolio/index.html">PORTFOLIO</a></li>
+            <li><a href="/Portfolio/about.html">A PROPOS</a></li>
+            <li><a href="/Portfolio/projets.html">PROJETS</a></li>
+            <li><a href="/Portfolio/contact.html">CONTACT</a></li>
+            <li><a href="/Portfolio/veille.html">VEILLE IT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="project_h1
+        ">Projet Gmail</h1>
+        <section class="projet">
+            <div>
+                <h2>Contexte</h2>
+                <p>Projet réalisé dans le cadre de la formation ITIC Paris</p>
+            </div>
+            <div>
+                <h2>Objectifs</h2>
+                <p>Réaliser une page de connection reprenant l'interface graphique du site Gmail</p>
+                </div>
+            <div>
+                <h2>Contraintes</h2>
+                <ul>
+                    <li>Utiliser PHP</li>
+                    <li>Utiliser une base de donneés</li>
+                    <li>Utiliser HTML/CSS</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Compétences acquises</h2>
+                <ul>
+                    <li>Utilisation de PHP</li>
+                    <li>Utilisation de MySQL</li>
+                    <li>Utilisation de HTML/CSS</li>
+                    <li>Déployer un service</li>
+            </div>
+            <div>
+                <h2>Technologies</h2>
+                <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>HTML/CSS</li>
+            </ul>
+            </div>
+            <div>
+                <h2>Liens</h2>
+                <a href=""><img src="../img/icone_github.png" alt="icone github"></a>
+                <a href=""><img src="../img/icone_link.png" alt="icone lien"></a>
+            </div>
+            <div>
+                <h2>Status</h2>
+                <p>- Terminé</p>
+                <p>Durée : 4 Heures</p>
+            </div>
+        </section>
+        <section>
+            <h2>Maquette</h2>
+            <div>
+                <h3>Maquette analyser du cahier des charges</h3>
+                <img class="img_projet" src="../asset/gmail/overview_gmail.png" alt="maquette analyser">
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>0. Définition de la route logique éxécution du projet</h2>
+                <h2>Diagramme Utilisateur</h2>
+                <img class="img_projet" src="../asset/gmail/DiagrammeUser.png" alt="diagramme utilisateur">
+            </div>
+            <div>
+                <h2>1. Création de la maquette fonctionelle en HTML CSS'</h2>
+               <p> Tout d'abord, j'ai analysé la maquette donner dans le cahier des charges et j'ai décidé de la découper en plusieurs parties.</p>
+                <article>
+                    <h3>1.1. Analyse de la page d'index</h3>
+                    <p>La page d'index est la page d'accueil du site, elle contient un HeroBanner et un formulaire d'inscription</p>
+                    <p>Ce qui ma permis de pouvoir créer la premiere page d'index</p>
+                    <ul class="code_snippets">
+                        <li>
+                            <h4>HTML</h4>
+                            <pre><code class="sql_snip">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;fr&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/reset.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.css&quot;&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;css/inscription.css&quot;&gt;
+        &lt;title&gt;Gmail : inscription&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;a href=&quot;index.html&quot; class=&quot;gm_logo&quot;&gt;&lt;img src=&quot;asset/gmail.png&quot; alt=&quot;logo_gmail&quot;&gt;&lt;/a&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;POUR LES PROS&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;pages/connection.html&quot;&gt;CONNEXION&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#inscrip&quot;&gt;CR&Eacute;ER UN COMPTE&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;section class=&quot;HeroBanner&quot; aria-label=&quot;page d'accueil&quot;&gt;
+            &lt;h1&gt;Retrouvez la fluidit&eacute; et la &lt;br&gt; simplicit&eacute; de Gmail sur &lt;br&gt; tous vos appareil&lt;/h1&gt;
+            &lt;a href=&quot;#inscrip&quot; class=&quot;btn-hb&quot; aria-label=&quot;bouton vers la creation de compte&quot;&gt;CR&Eacute;ER UN COMPTE&lt;/a&gt;
+           
+        &lt;/section&gt;
+        &lt;section class=&quot;inscrip&quot; id=&quot;inscrip&quot; aria-label=&quot;section inscription&quot;&gt;
+            &lt;h2&gt;Une bo&icirc;te de reception &lt;br&gt; enti&egrave;rement repens&eacute;e&lt;/h2&gt;
+            &lt;p&gt;avec les nouveaux onglets personnalisables, rep&eacute;rez imm&eacute;diatement les nouveaux messages et choissisez ceux que vous souhaitez lire en priorit&eacute;.&lt;/p&gt;
+    
+            &lt;fieldset class=&quot;inscription-field&quot; aria-label=&quot;champs d inscription&quot;&gt;
+                &lt;legend&gt;Cr&eacute;er un compte&lt;/legend&gt;
+                &lt;form action=&quot;pages/connection.html&quot;&gt;
+                    &lt;label for=&quot;nom&quot;&gt;Nom &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; placeholder=&quot;Votre nom&quot; id=&quot;nom&quot; aria-label=&quot;nom&quot;&gt;
+                    &lt;label for=&quot;prenom&quot;&gt;Pr&eacute;nom &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; placeholder=&quot;Votre prenom&quot; id=&quot;prenom&quot; aria-label=&quot;prenom&quot;&gt;
+                    &lt;label for=&quot;mail&quot;&gt;Mail &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+                    &lt;input type=&quot;email&quot; placeholder=&quot;votre mail&quot; id=&quot;mail&quot; aria-label=&quot;email&quot;&gt;
+                    &lt;label for=&quot;psw&quot;&gt;Choisir votre mot de passe &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+                    &lt;input type=&quot;password&quot; placeholder=&quot;Mot de passe&quot; id=&quot;psw&quot; aria-label=&quot;password&quot;&gt;
+                    &lt;input type=&quot;submit&quot; value=&quot;VALIDER VOTRE COMPTE&quot; id=&quot;val&quot; aria-label=&quot; envoyer&quot;&gt;
+                &lt;/form&gt;
+            &lt;/fieldset&gt;
+            
+            &lt;a href=&quot;#inscrip&quot; class=&quot;go-down&quot;&gt;&lt;img src=&quot;asset/arrow.png&quot; alt=&quot;bouton descendre vers l inscription&quot; aria-label=&quot;descendre vers l'inscription&quot;&gt;&lt;/a&gt;
+        &lt;/section&gt;
+        &lt;script src=&quot;js/app.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code>
+                        </li>
+                        <li>
+                            <h4>CSS</h4>
+                            <pre><code class="sql_snip">
+    *{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .HeroBanner{
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../asset/home-hero.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding:  15% 0 0 10% ;
+    }
+    
+    header{
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 1px 6px 10px 1px rgba(0, 0, 0, 0.088);
+    }
+    
+    header>a>img{
+        width: 11rem;
+        margin-left: 1rem;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    nav>ul{
+        display: flex;
+        
+        align-items: center;
+        justify-items: center;
+    }
+    nav>ul>li{
+        height: fit-content;
+        width: fit-content;
+        background-color: #fff;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        
+    
+    }
+    nav>ul>li:hover a{
+        color: rgb(0, 0, 0);
+        background-color: #ececec;
+        transition: 0.3s all ease-in-out;
+    }
+    nav>ul>li>a{
+        height: 100%;
+        width: 100%;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    
+    nav>ul>li:nth-child(3)>a
+    {
+        color: #fff;
+        background-color: #dd5347;
+    
+    }
+    nav>ul>li:nth-child(3)>a:hover ,.btn-hb:hover{
+        transition: all 0.3s ease-in-out;
+        color: #fff;
+        background-color: #c0473c;
+    }
+    h1{
+        color: #fff;
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    
+    }
+    .btn-hb{
+        background-color: #dd5347;
+        padding: 2rem;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .go-down>img{
+        position: fixed;
+        bottom: 0;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        bottom: 0%;
+        right: 0%;
+        border-radius: 50%;
+        background-color: #dd5347;
+        padding: 2rem;
+        box-shadow: 1px 6px 14px 1px rgba(0,0,0,1);
+    }
+    .go-down>img:hover{
+        transition: 0.3s ease-in-out all;
+        background-color: #c0473c;
+        cursor: pointer;
+    }
+    .warn{
+        background-color: rgb(253, 228, 181);
+        border: thin solid rgba(210, 137, 0, 0.474);
+        
+    
+    }
+    .success{
+        background-color: rgb(167, 255, 167);
+        border:thin solid rgba(0, 128, 0, 0.392);
+    }
+    .error{
+    background-color: rgb(255, 158, 158);
+    border: thin solid rgba(255, 0, 0, 0.374);
+    }
+    .state{
+        max-width:50%;
+        text-align: center;
+        margin: 1rem auto auto auto;
+        padding: 2rem;
+       
+    }
+    
+                            </code></pre>
+                        </li>
+                        <li>
+                            <h4>JS</h4>
+                            <pre><code>
+    // Attends que le DOM soit chargé
+document.addEventListener("DOMContentLoaded", (e) => {
+    // Vide le local storage
+    localStorage.clear();
+    // Retire le comportement par défaut du bouton de validation
+    e.preventDefault();
+    // Sélectionne le bouton de validation
+    let btn = document.querySelector("#val");
+    // Ajout d'un event listener sur le bouton
+    btn.addEventListener("click", () => {
+      // Sélectionne les valeurs des inputs et les stock dans des variables
+      let name = document.querySelector("#nom").value;
+      let prenom = document.querySelector("#prenom").value;
+      let mail = document.querySelector("#mail").value;
+      let password = document.querySelector("#psw").value;
+  
+      // Sauvegarde les valeurs dans le local storage
+      localStorage.setItem("name", name);
+      localStorage.setItem("prenom", prenom);
+      localStorage.setItem("psw", password);
+      localStorage.setItem("mail", mail);
+    });
+});
+      
+                            </code></pre>
+                        </li>
+                    </ul>
+                    <p>Rendu Index</p>
+                    <img src="../asset/gmail/RenduIndex.png" alt="Rendu Index" class="img_projet">
+                    <img src="../asset/gmail/RenduIndex2.png" alt="Rendu Index2" class="img_projet">
+                </article>
+                <article>
+                    <h3>1.2. Analyse de la page de connexion</h3>
+                    <p>La page de connexion est composé de 2 inputs et d'un bouton de validation</p>
+                    <ul class="code_snippets">
+                        <li>
+                            <h4>HTML</h4>
+                            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../css/reset.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../css/main.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../css/inscription.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../css/connection.css&quot;&gt;
+    &lt;title&gt;gmail connection&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;a href=&quot;../index.html&quot; class=&quot;gm_logo&quot;&gt;&lt;img src=&quot;../asset/gmail.png&quot; alt=&quot;logo_gmail&quot;&gt;&lt;/a&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;../index.html&quot;&gt;POUR LES PROS&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;pages/connection.html&quot;&gt;CONNEXION&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;../index.html#inscrip&quot;&gt;CR&Eacute;ER UN COMPTE&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;h1 class=&quot;connec&quot;&gt;Bienvenue dans votre espace&lt;/h1&gt;
+        &lt;fieldset class=&quot;inscription-field&quot;&gt;
+            &lt;legend&gt;Connectez-vous &agrave; votre compte&lt;/legend&gt;
+            &lt;form action=&quot;&quot;&gt;
+                &lt;label for=&quot;login&quot;&gt;Mail ou Login &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+                &lt;input type=&quot;text&quot; placeholder=&quot;Votre login ou mail&quot; id=&quot;login&quot;&gt;
+                &lt;label for=&quot;psw&quot;&gt;Choisir votre mot de passe &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+                &lt;input type=&quot;password&quot; placeholder=&quot;Mot de passe&quot; id=&quot;psw&quot;&gt;
+                &lt;a value=&quot;CONNEXION &Agrave; VOTRE COMPTE&quot; id=&quot;connection&quot;&gt;CONNEXION &Agrave; VOTRE COMPTE&lt;/a&gt;
+            &lt;/form&gt;
+        &lt;/fieldset&gt;
+        &lt;p id=&quot;state&quot;&gt;&lt;/p&gt;
+        &lt;span class=&quot;go-down&quot;&gt;&lt;img src=&quot;../asset/arrow.png&quot; alt=&quot;&quot;&gt;&lt;/span&gt;
+    &lt;/main&gt;
+    &lt;script src=&quot;../js/connection.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            <h4>CSS</h4>
+                            <pre><code>
+header{
+    position: initial;
+}
+.connec{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+main{
+    height: 80vh;
+}
+
+
+    
+                            </code></pre>
+                        </li>
+                        <li>
+                            <h4>JS</h4>
+                            <pre><code>
+let printState = (state,cssBinding) => {
+    let a = document.querySelector("#state");
+    a.innerHTML = state;
+    a.className = cssBinding;
+    a.className += " state";
+};
+
+
+// Attends que le DOM soit chargé
+document.addEventListener("DOMContentLoaded", (e) => {
+  // Ecouteur d'événement sur le bouton de connexion
+  let connect = document.querySelector("#connection");
+  connect.addEventListener("click", (e) => {
+    // Récupération des valeurs des champs
+    let login = document.querySelector("#login").value;
+    let password = document.querySelector("#psw").value;
+    let log = localStorage.getItem("mail");
+    let psw = localStorage.getItem("psw");
+    // Vérification des champs
+    if (!login || !password ){
+        printState("Veuillez completez les champs","warn");
+    }else{
+        // Vérification des identifiants
+        if (login === log && password === psw ){
+            // Affichage d'un message de succès
+            printState("Bonjour "+localStorage.getItem("prenom")+" ,vous etez connecter !","success");
+        }else{
+            // Affichage d'un message d'erreur
+            printState("Mail ou mot de passe incorrect ! Veuillez saisir un login et mot de passe correct","error");
+        }
+    }
+  });
+});
+
+      
+                            </code></pre>
+                        </li>
+                    </ul>
+                    <img src="/asset/gmail/RenduConnexion.png" alt="Rendu Connexion" class="img_projet">
+                    <ul class="little_img">
+                        <li><img src="/asset/gmail/Connec1.png" alt=""></li>
+                        <li><img src="/asset/gmail/Connec2.png" alt=""></li>
+                        <li><img src="/asset/gmail/Connec3.png" alt=""></li>
+                    </ul>
+                </article>
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                <h2>2. Création de la base de données</h2>
+                <p>La maquette étant finaliser est valider je me suis donc interessé à la base de données</p>
+                <article>
+                    <h3>2.1 Identification du besoin</h3>
+                    <p>Pour pouvoir gérer une connection ont à besoin de deux éléments primordiaux</p>
+                    <ul>
+                        <li>Un identifiant</li>
+                        <li>Un mot de passe</li>
+                    </ul>
+                    <p>Il faut donc créer une table qui contiendra ces deux éléments</p>
+                    <p>Sauf que comme nous avons pus le voir dans la maquette il est nécessaire de pouvoir afficher le nom et le prenom de l'utilisateur</p>
+                    <p>donc il faut les rajouter à la table</p>
+                    <p>Ce qui nous donnes donc : </p>
+                    <img src="/asset/gmail/Users.svg" alt="DB">
+
+                    <h3>2.2 Création de la base de données</h3>
+                    <p>Une fois le MCD réaliser il faut créer la requete SQL qui permet de créer la table</p>
+                    <pre><code class="sql_snip">
+CREATE TABLE `users` (
+    `idUser` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `email` varchar(255) NOT NULL,
+    `name` varchar(255) NOT NULL,
+    `surname` varchar(255) NOT NULL,
+    `psw` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+                    </code></pre>
+                    <p>Maintenant que la table est créer nous pouvons commencer notre intégration en PHP</p>
+                </article>
+                <article>
+                    <h3>2.3 Découpage des maquettes</h3>
+                    <p>Comme nous l'avons vu dans la partie précédente nous avons besoin de trois pages</p>
+                    <ul>
+                        <li>Une page d'inscription</li>
+                        <li>Une page de connexion</li>
+                        <li>Une page de connexion reussi</li>
+                    </ul>
+                    <p>Dans ces trois pages nous avons des éléments qui se répete notamment :</p>
+                    <ul>
+                        <li>Une partie header</li>
+                        <li>Une partie main</li>
+                        <li>Une partie footer</li>
+                    </ul>
+                    <p>Il faut donc créer un fichier pour chaque partie</p>
+                    <p>Et un fichier pour chaque page</p>
+                    <p>ce qui nous donnes donc :</p>
+                    <img src="/asset/gmail/decoupage.png" alt="decoupage">
+                    <p>Une fois se découpage réaliser, il faut adapter à chaque fichiers, les partie html de la premiere maquette créer.</p>
+                    <p>ce qui nous donnes donc pour l'inscription :</p>
+                    <ul class="grid_4">
+                        <li>
+                        <pre><code class="sql_snip">
+    &lt;?php 
+    include './include/header.inc.php';
+?&gt;
+&lt;main&gt;
+    &lt;?php 
+    include './include/heroban.inc.php';
+    include './include/inscription.inc.php';
+    ?&gt;
+&lt;/main&gt;
+&lt;/body&gt;
+                        </code></pre>
+                        </li>
+
+                        <li>
+                            <pre><code class="sql_snip">
+&lt;section class=&quot;inscrip&quot; id=&quot;inscrip&quot;&gt;
+&lt;h2&gt;Une bo&icirc;te de reception &lt;br&gt; enti&egrave;rement repens&eacute;e&lt;/h2&gt;
+&lt;p&gt;avec les nouveaux onglets personnalisables, rep&eacute;rez imm&eacute;diatement 
+les nouveaux messages et choissisez ceux que vous souhaitez lire en priorit&eacute;.&lt;/p&gt;
+                        
+&lt;?php include './include/form.inscrip.inc.php'?&gt;
+&lt;a href=&quot;#inscrip&quot; class=&quot;go-down&quot;&gt;&lt;img src=&quot;../asset/arrow.png&quot; alt=&quot;&quot;&gt;&lt;/span&gt;
+&lt;/section&gt;
+                            </code></pre>
+                        </li>
+                        <li>
+                                <pre><code class="sql_snip">
+&lt;?php include_once './include/pdo.inc.php' ?&gt;
+&lt;?php include_once './include/inscription.func.inc.php' ?&gt;
+&lt;fieldset class=&quot;inscription-field&quot;&gt;
+   &lt;legend&gt;Cr&eacute;er un compte&lt;/legend&gt;
+   &lt;form action=&quot;./index.php&quot; method=&quot;post&quot;&gt;
+       &lt;label for=&quot;nom&quot;&gt;Nom &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+       &lt;input type=&quot;text&quot; placeholder=&quot;Votre nom&quot; id=&quot;nom&quot; name=&quot;nom&quot;&gt;
+       &lt;label for=&quot;prenom&quot;&gt;Pr&eacute;nom &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+       &lt;input type=&quot;text&quot; placeholder=&quot;Votre prenom&quot; id=&quot;prenom&quot; name=&quot;prenom&quot;&gt;
+       &lt;label for=&quot;mail&quot;&gt;Mail &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+       &lt;input type=&quot;email&quot; placeholder=&quot;Votre mail&quot; id=&quot;mail&quot; name=&quot;mail&quot;&gt;
+       &lt;label for=&quot;psw&quot;&gt;Choisir votre mot de passe &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;
+       &lt;input type=&quot;password&quot; placeholder=&quot;Mot de passe&quot; id=&quot;psw&quot; name=&quot;psw&quot;&gt;
+       &lt;input type=&quot;submit&quot; value=&quot;VALIDER VOTRE COMPTE&quot; id=&quot;val&quot; name=&quot;val&quot;&gt;
+   &lt;/form&gt;
+&lt;/fieldset&gt;
+                           </code>
+                        </pre>
+                        </li>
+                        <li>
+                            <pre><code class="sql_snip">
+ &lt;section class=&quot;HeroBanner&quot;&gt;
+        &lt;h1&gt;Retrouvez la fluidit&eacute; et la &lt;br&gt; simplicit&eacute; de Gmail sur &lt;br&gt; tous vos appareil&lt;/h1&gt;
+        &lt;a href=&quot;#inscrip&quot; class=&quot;btn-hb&quot;&gt;CR&Eacute;ER UN COMPTE&lt;/a&gt;
+        &lt;span class=&quot;go-down&quot;&gt;&lt;img src=&quot;asset/arrow.png&quot; alt=&quot;&quot;&gt;&lt;/span&gt;
+&lt;/section&gt;
+
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                    <h3>2.4 PDO</h3>
+                    <p>Une fois le découpage réaliser, il faut créer un fichier pdo.class.php</p>
+                    <p>Et le fichier pdo.inc.php</p>
+                    <p>qui vas nous permettre de nous connecter à la base de donnée</p>
+                    <p>ce qui nous donnes donc :</p>
+                    <ul class="grid_4">
+
+                        <li>
+                            <pre><code class="sql_snip">
+&lt;?php
+/*
+namespace App;
+use \PDO;
+*/
+class Database
+{
+
+    private $db_name;
+    private $db_user;
+    private $db_pass;
+    private $db_host;
+    private $pdo;
+
+    //connection &agrave; la bdd
+    public function __construct($db_name, $db_user, $db_pass, $db_host)
+    {
+        $this-&gt;db_name = $db_name;
+        $this-&gt;db_user = $db_user;
+        $this-&gt;db_pass = $db_pass;
+        $this-&gt;db_host = $db_host;
+        $this-&gt;setPDO();
+
+    }
+
+    public function getPDO()
+    {
+        
+        return $this-&gt;pdo;
+
+    }
+    private function setPDO(){
+        $pdo = new PDO('mysql:dbname=gmail;host=localhost', '', '');
+        $pdo-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $this-&gt;pdo = $pdo;
+    }
+    public function query($_state)
+    { //envoyer en param&egrave;tre la requ&ecirc;te sql
+        $req = $this-&gt;getPDO()-&gt;query($_state);
+        $datas = $req-&gt;fetchAll(PDO::FETCH_OBJ);
+        return $datas;
+
+    }
+}
+?&gt;
+                            </code></pre>
+                        </li>
+                        <li>
+                            <pre><code class="sql_snip">
+&lt;?php
+    require('include/pdo.class.inc.php');
+try {
+    $_pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+    $_bdd = new PDO('mysql:host=localhost;dbname=gmail','','');
+    array(PDO::MYSQL_ATTR_INIT_COMMAND =&gt; 'SET NAMES utf8',$_pdo_options);
+
+} catch (Exception $e) {
+    die(&quot;Error: &quot; . $e-&gt;getMessage());
+}
+$_bdd = new Database(&quot;gmail&quot;,&quot;root&quot;,&quot;root&quot;,&quot;localhost&quot;);
+$_bdd = $_bdd-&gt;getPDO();
+?&gt;
+                            </code></pre>
+                        </li>
+                    </ul>
+
+                    <h3>2.5 Classe USER</h3>
+                    <p>Une fois le PDO créer, il faut créer un fichier user.class.php</p>
+                    <p>qui vas nous permettre de créer un objet user</p>
+                    <p>ce qui nous donnes donc :</p>
+                    <ul class="grid_4">
+                        <li>
+                            <pre><code class="sql_snip">
+&lt;?php
+class User {
+    private string $name;
+    private string $surname;
+    private string $password;
+    private string $mail;
+    function __construct(string $name,string $surname,$password,$mail ){
+        $this-&gt;name = $name;
+        $this-&gt;surname = $surname;
+        $this-&gt;password = $password;
+        $this-&gt;mail = $mail;
+    }
+    function getName() {
+        return $this-&gt;name;
+    }
+    function getSurname() {
+        return $this-&gt;surname;
+    }
+
+    function getMail() {
+        return $this-&gt;mail;
+    }
+    function setSession(){
+        session_start();
+        $_SESSION[&quot;prenom&quot;] = $this-&gt;getName();
+        $_SESSION[&quot;nom&quot;] = $this-&gt;getSurname();
+    }
+}
+
+?&gt;
+                            </code></pre>
+                        </li>
+                    </ul>
+                    <h3>2.6 Fonction PHP</h3>
+                    <p>Une fois toute les partie découper il faut rajouter la logique des pages <br>
+                    ce qui vas nous permettre de récuperer,traiter et afficher les valeurs saisi par l'utilisateur</p>
+                    <p>pour cela nous allons créer un fichier inscription.func.inc.php et connec.func.inc.php</p>
+                    <p>qui vas contenir toute les fonctions dont nous avons besoin pour l'inscription et la connexion</p>
+                    <p>ce qui nous donnes donc :</p>
+                    <ul class="grid_4">
+                        <li>
+                            <pre><code class="sql_snip">
+&lt;?php
+if(isset($_POST['prenom']) &amp;&amp; isset($_POST['nom']) &amp;&amp; isset($_POST['mail']) &amp;&amp; isset($_POST['psw'])){
+    $_resp = $_bdd-&gt;query(&quot;SELECT * FROM users WHERE email = '{$_POST['mail']}'&quot;);
+    if ($_resp-&gt;rowCount() &gt; 0) {
+        echo &quot;&lt;p class='warn'&gt;Cette email est d&eacute;ja utiliser veuillez vous connect&eacute; ou changer votre email.&lt;/p&gt;&quot;;
+    }else{
+        $req = $_bdd-&gt;prepare('INSERT INTO users (email,password,name,surname)VALUES(?,?,?,?)');
+            $req-&gt;execute(array($_POST['mail'], password_hash($_POST['psw'],PASSWORD_DEFAULT),$_POST['prenom'],$_POST['nom']));
+        header(&quot;Location: connection.php&quot;);
+    }
+}else if(isset($_POST['val'])){
+    echo '&lt;p class=&quot;state warn&quot;&gt; Veuillez compl&eacute;ter le formulaire avant de valider &lt;/p&gt;';
+}
+?&gt;
+</code></pre>
+                        </li>
+                        <li>
+                            <pre><code class="sql_snip">
+&lt;?php 
+include_once( 'include/user.class.inc.php' );
+
+if(!empty($_POST[&quot;mail&quot;]) &amp;&amp; !empty($_POST[&quot;psw&quot;]) &amp;&amp; preg_match(&quot;#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#&quot;, $_POST['mail'])){
+    try {
+        $reponse = $_bdd-&gt;query(&quot;SELECT * FROM  users WHERE email = '{$_POST['mail']}' limit 1&quot;);
+        $DATA = $reponse-&gt;fetch();
+        $login = $_POST[&quot;mail&quot;];
+        $mdp = $_POST[&quot;psw&quot;];
+    if(!password_verify($_POST[&quot;psw&quot;],$DATA['password'])){
+            echo &quot;&lt;p class='state error'&gt; Erreur login ou mot de passe?&lt;/p&gt;&quot;;
+        }
+    else if(password_verify($_POST[&quot;psw&quot;],$DATA['password']))
+    {
+        $_current_user = new User($DATA['name'],$DATA['surname'],$DATA['password'],$DATA['email']);
+        $_current_user-&gt;setSession();
+        echo &quot;&lt;p class='state success'&gt;Bonjour &quot;.$_SESSION['prenom'].&quot; &quot;.$_SESSION['nom'].&quot; &lt;/p&gt;&quot;;
+                                
+    }
+    } catch (Exception $e) {
+        echo &quot;&lt;p class='state error'&gt; Erreur login ou mot de passe?&lt;/p&gt;&quot;;
+    }
+
+
+}else if(isset($_POST['val'])){
+    echo &quot;&lt;p class='state warn'&gt;Vous avez oubliez votre mail ou password?&lt;/p&gt;&quot;;
+}
+?&gt;
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                    <p>
+                        Voila nous avons fini la partie logique inscription et connexion
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Lahuts</p>
+    </footer>
+</body>

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/headernavfooter.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../favicon/manifest.webmanifest">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/projet.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+    <title>Portfolio Alexis Huet</title>
+    <link rel="stylesheet" href="../css/dracula.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/Portfolio/index.html"><h1> Lahuts</h1></a>
+        </div>
+        <a href="/Portfolio/contact.html">CONTACT</a>
+    </header>
+    <nav class="sidebar">
+       <div class="container_burger">
+        <div class="btn_burger"></div>
+       </div>
+
+        <ul class="hidden_nav">
+            <li><a href="/Portfolio/index.html">PORTFOLIO</a></li>
+            <li><a href="/Portfolio/about.html">A PROPOS</a></li>
+            <li><a href="/Portfolio/projets.html">PROJETS</a></li>
+            <li><a href="/Portfolio/contact.html">CONTACT</a></li>
+            <li><a href="/Portfolio/veille.html">VEILLE IT</a></li>
+        </ul>
+    </nav>
+<main>
+    <h1 class="project_h1">Support Bureautique sur site</h1>
+    <section class="projet">
+        <div class="projet_description">
+            <h2>Contexte</h2>
+            <p>Le support bureautique sur site est l'une des missions que j'ai réalisé lors de mon alternance de BTS SIO.Cette mission s'est déroulé au sein de l'entreprise d'un de nos client Gedeon Richter à Paris.</p>
+            <p>Le but de cette missions était de répondre aux besoins de dépannage informatique des outils office 365, soit en direct soit par mail selon la gravité du probleme (tickets de support bureautique) sur site.</p>
+
+            <h2>Mes missions :</h2>
+            <ul>
+                <li>Répondre aux incidents liée aux logiciels Office 365 des utilisateurs</li>
+                <li>Installer les logiciels de la suite Office 365</li>
+                <li>Configurer les comptes office 365</li>
+                <li>Paramétrér les logiciels pour répondre normes de sécurité de l'entreprise</li>
+                <li>Former les utilisateurs sur les outils bureautique</li>
+                <li>Créer des tutoriels pour les utilisateurs</li>
+                <li>Créer des procédures pour les utilisateurs</li>
+                <li>Créer des procédures pour les techniciens</li>
+            </ul>
+    </section>
+    <section>
+        <h2>Répondre aux incidents liée aux logiciels Office 365 des utilisateurs</h2>
+        <p>Les incidents liée aux logiciels Office 365 des utilisateurs sont des incidents qui peuvent être liée à la configuration des logiciels ou à la configuration des comptes.</p>
+    </section>
+    <section>
+        <h2>Cas d'exemple</h2>
+        <h3>problème macro</h3>
+        <p>Un utilisateur n'avait pas la possibilité d'éxecuter les macros sur un fichiers excel.</p>
+        <p>Dans un premier temps ,je me suis rendu au bureau de l'utilisateur pour lui demander plus details concernant sa demande notamment :</p>
+        <ul>
+            <li>Depuis combien de temps le probleme est présent ? Depuis la réception du fichier</li>
+            <li>le fichier provient t'il d'un expéditeur de confiance ? Oui un partenaire commerciale</li>
+            <li>Est ce que le probleme est présent sur d'autres fichiers excel du même type ? Oui</li>
+        </ul>
+        
+        <p>Après avoir obtenu les réponses à mes questions, j'ai pu déterminer que le probleme était liée à la sécurité d'excel sur la partie de sécurité des macros</p>
+        <p>Je me suis donc rendu sur le poste de travail de l'utilisateur pour vérifier les paramètres de sécurité d'excel.</p>
+        <p>Après avoir vérifié les paramètres de sécurité d'excel, j'ai pu constater que le niveau de sécurité était bien réglée sur"désactivée les macro sans notification".</p>
+        <p>Une fois cela confirmer, j'ai donc abaissé le niveau de un cran pour "désactivée les macro avec notification" </p>
+        <p>Ce qui permet de :</p>
+            <ul>
+                <li>bloquer les macros non signées</li>
+                <li>bloquer les macros signées mais non autorisées</li>
+                <li>autoriser les macros signées</li>
+            </ul>
+        <p>
+            <img src="../img/office365/office365_1.png" alt="image de la sécurité des macros">
+        </p>
+        <p>Après avoir effectué cette manipulation, j'ai demandé à l'utilisateur de tester à nouveau le fichier excel.</p>
+        <p>Après avoir testé le fichier excel, l'utilisateur a pu constater que le probleme était résolu.</p>
+    </section>
+
+    <section>
+        <h3>Acceder à des fichiers excel stockée sur un SharePoint de la maison mère sur un SharePoint</h3>
+        <p>Un utilisateur n'arrivait pas à acceder et à modifier des fichiers excel stockée sur un SharePoint de la maison mère sur un SharePoint.</p>
+        <p>Dans un premier temps ,je me suis rendu au bureau de l'utilisateur pour lui demander plus details concernant sa demande notamment :</p>
+        <ul>
+            <li>Depuis combien de temps le probleme est il présent ? Depuis quelque années</li>
+            <li>Avez vous déja reussi à l'ouvrir et le traiter ? Non, les solutions donner par la maison mère ne fonctionne pas à savoir se connecter au SharePoint via internet explorer pour pouvoir se connecter</li>
+            <li>Est ce que le probleme est présent spour d'autre personne de l'entreprise ? Oui tout le pôle est bloqué dessus</li>
+        </ul>
+        <p>Après avoir obtenu les réponses à mes questions, C'était un probleme Inedit qui m'etait proposer</p>
+        <p>Je me suis donc rendu à mon bureau pour formuler des hypothese par rapport à se probleme en sachant que les solutions proposer par la maison mmère ne fonctionne pas</p>
+        <p>Après avoir réfléchi à des solutions, j'ai pu formuler 2 hypothèses :</p>
+        <ul>
+            <li>Le probleme est liée à la sécurité du SharePoint de la maison mère</li>
+            <li>Le probleme est liée à notre configuration informatique</li>
+        </ul>
+        <p>Après avoir formuler ces hypothèses, j'ai donc décidé de tester la première hypothèse en me connectant au SharePoint de la maison mère via internet explorer.</p>
+        <p>Après avoir effectué cette manipulation, j'ai pu constater que effectivement une blanche s'affiche</p>
+        <p>Après avoir constaté cela, j'ai donc décidé de tester la deuxième hypothèse en me connectant au SharePoint de la maison mère via internet explorer en mode de compatibilité.</p>
+        <p>Après avoir effectué cette manipulation, j'ai pu constater que la page rester tout de même blanche</p>
+        <p>Par contre en me connectant avec un navigateur classique je pouvais acceder au dossier mais les fichiers ne pouvais pas être ouvert ou télécharger, ni utilisé les connecteur type OneDrive ou ouvrir via Excel qui ne s'excuter pas</p>
+        <p>Après avoir constaté cela, j'ai donc décidé de tester la troisième hypothèse en me connectant au SharePoint de la maison mère via internet explorer en mode de compatibilité et en ajoutant le site dans les sites de confiance.</p>
+        <p>Après avoir effectué cette manipulation, j'ai pu constater que la page rester tout de même blanche</p>
+        <p>Donc je me suis poser la questions quel est la version du SharePoint ?</p>
+        <p>Après avoir poser cette question, j'ai pu constater  apres une recherche approfondie que la version du SharePointOnline était 2013</p>
+        <p>Donc je me suis poser la question quel suite Office était utilisée en 2013 en pack avec SharePoint</p>
+        <p>En regardant sur le forum de Microsoft j'ai pus trouver se qui compose le pack en 2013 et nottament le logiciel OneDrive 2013 dont j'ai aperçu  le connecteur sur le SharePoint de la maison mère.</p>
+        <p>Donc je me suis poser la question si en installant cette version de OneDrive je pourrais accéder au fichier ?</p>
+        <p>Donc sur un ordinateur de test j'ai décider d'installer cette version de OneDrive est de répeter le chemin de connexion via un nagiteur recent.</p>
+        <p>Après avoir effectué cette manipulation, j'ai pu constater que effectivement je pouvais accéder au sharepoint le liée avec cette version de OneDrive est acceder et modifier le fichier</p>
+        <p>Une fois la résolution du probleme trouvé je me suis demander si il était possible d'avoir à la fois OneDrive 2013 et le OneDrive actuel en même temps pour ne pas contraintre l'activité de l'utilisateur</p>
+        <p>Donc en retournant sur mon pc de test j'ai donc procéder à l'installation du pack office365 sur même pc est éffectivement les deux logiciel arrive à cohabiter sans poser de disfonctionnement</p>
+        <p>Je suis donc retourner voir l'utilisateur pour lui demander si ctte solution lui conviendrais dans son activité. Aillent eu une  réponse positive de sa part. </p>
+        <p>J'ai donc écrit une procédure de correction du probleme.</p>
+        <p>Une fois cela réaliser je suis partie corriger le probleme de l'utilisateur</p>
+    </section>
+
+</main>
+    <footer>
+        <p>© 2023 Lahuts</p>
+    </footer>
+</body>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/headernavfooter.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="../favicon/manifest.webmanifest">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/projet.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+    <title>Portfolio Alexis Huet</title>
+    <link rel="stylesheet" href="../css/dracula.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/Portfolio/index.html"><h1> Lahuts</h1></a>
+        </div>
+        <a href="/Portfolio/contact.html">CONTACT</a>
+    </header>
+    <nav class="sidebar">
+       <div class="container_burger">
+        <div class="btn_burger"></div>
+       </div>
+
+        <ul class="hidden_nav">
+            <li><a href="/Portfolio/index.html">PORTFOLIO</a></li>
+            <li><a href="/Portfolio/about.html">A PROPOS</a></li>
+            <li><a href="/Portfolio/projets.html">PROJETS</a></li>
+            <li><a href="/Portfolio/contact.html">CONTACT</a></li>
+            <li><a href="/Portfolio/veille.html">VEILLE IT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="project_h1">Administration Active Directory</h1>
+        <section class="projet">
+            
+                <ul>
+                    <h2>Mes missions :</h2>
+                    <li>Création de compte Active Directory</li>
+                    <li>Mise en domaine de poste utilisateur</li>
+                    <li>Gestion des droits serveur de fichier par groupe</li>
+                    <li>Déverouillage sessions utilisateur</li>
+                </ul>
+                <ul>
+                    <h2>Environnement technique :</h2>
+                    <li>Windows Server 2016</li>
+                    <li>Active Directory</li>
+                    <li>Windows 10 & Windows 11</li>
+                </ul>
+                <ul>
+                    <h2>Compétences acquises :</h2>
+                    <li>Administration Active Directory</li>
+                    <li>Administration Windows 10 & 11</li>
+                </ul>
+        </section>
+        <section>
+            <h2>Création de compte Active Directory</h2>
+            <p>La création de compte Active Directory est une tâche récurrente dans une entreprise. <br>
+                Elle permet de créer un compte utilisateur sur le domaine de l'entreprise. <br>
+                 Ce compte permet à l'utilisateur de se connecter à son poste de travail et d'accéder aux ressources partagées sur le réseau.</p>
+            <p>Notamment :</p>
+            <ul>
+                <li>Les dossiers partagés</li>
+                <li>Les imprimantes</li>
+                <li>Les applications métiers (MyReport,Sage)</li>
+                <li>VPN Windows</li>
+            </ul>
+            <h4>Comment créer un compte sur l'Active Directory</h4>
+            <p>La création d'un compte sur l'Active Directory se fait via l'outil "Utilisateurs et ordinateurs Active Directory". <br>
+                Il suffit de faire un clic droit sur l'OU (Organizational Unit) où l'on souhaite créer le compte et de cliquer sur "Nouveau" puis "Utilisateur".</p>
+            <img src="../img/activeDirectory/creationCompteAD.png" alt="Création d'un compte Active Directory">
+            <p>Il faut ensuite renseigner les informations du compte utilisateur :</p>
+            <ul>
+                <li>Nom de connexion</li>
+                <li>Nom complet</li>
+                <li>Mot de passe</li>
+                <li>Expiration du mot de passe</li>
+                <li>Adresse mail</li>
+                <li>Numéro de téléphone</li>
+                <li>Adresse</li>
+                <li>...</li>
+            </ul>
+            <p>Une fois le compte créé, il faut l'ajouter au groupe de sécurité correspondant à son poste de travail.</p>
+            <img src="../img/activeDirectory/ajoutGroupeSecurite.png" alt="Ajout d'un compte à un groupe de sécurité">
+            <p>Il faut ensuite ajouter le compte à l'OU correspondant à son poste de travail.</p>
+            <img src="../img/activeDirectory/ajoutOU.png" alt="Ajout d'un compte à une OU">
+        </section>
+        <section>
+            <h2>Mise en domaine de poste utilisateur</h2>
+            <p>La mise en domaine d'un poste utilisateur permet à l'utilisateur de se connecter à son poste de travail avec son compte Active Directory.</p>
+            <p>Il faut pour cela ajouter le poste à l'Active Directory.</p>
+            <img src="../img/activeDirectory/ajoutPosteAD.png" alt="Ajout d'un poste à l'Active Directory">
+            <p>Pour ce faire 
+                
+            </p>
+        </section>
+        <section>
+            <h2>Gestion des droits serveur de fichier par groupe</h2>
+            <p>La gestion des droits serveur de fichier par groupe permet de donner des droits d'accès à des dossiers partagés à des groupes d'utilisateurs.</p>
+            <p>Il faut pour cela créer un dossier partagé sur le serveur de fichier.</p>
+            <img src="../img/activeDirectory/creationDossierPartage.png" alt="Création d'un dossier partagé">
+
+            <p>Il faut ensuite ajouter le groupe de sécurité correspondant aux utilisateurs qui doivent avoir accès au dossier partagé.</p>
+            <img src="../img/activeDirectory/ajoutGroupeSecuriteDossierPartage.png" alt="Ajout d'un groupe de sécurité à un dossier partagé">
+
+            <p>Il faut ensuite donner les droits d'accès au groupe de sécurité sur le dossier partagé.</p>
+            <img src="../img/activeDirectory/droitsDossierPartage.png" alt="Droits d'accès sur un dossier partagé">
+
+            <p>Il faut ensuite ajouter le groupe de sécurité correspondant aux utilisateurs qui doivent avoir accès au dossier partagé.</p>
+            <img src="../img/activeDirectory/ajoutGroupeSecuriteDossierPartage.png" alt="Ajout d'un groupe de sécurité à un dossier partagé">
+        </section>
+        <section>
+            <h2>Déverouillage sessions utilisateur</h2>
+            <p>Le déverouillage de session utilisateur permet de débloquer un compte utilisateur qui a été bloqué suite à un trop grand nombre de tentatives de connexion.</p>
+            <p>Il faut pour cela se connecter à l'Active Directory et rechercher le compte utilisateur.</p>
+            <img src="../img/activeDirectory/rechercheCompteAD.png" alt="Recherche d'un compte utilisateur sur l'Active Directory">
+            <p>Il faut ensuite faire un clic droit sur le compte utilisateur et cliquer sur "Déverouiller le compte".</p>
+            <img src="../img/activeDirectory/deverouillageCompteAD.png" alt="Déverouillage d'un compte utilisateur sur l'Active Directory">
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Lahuts</p>
+    </footer>
+</body>

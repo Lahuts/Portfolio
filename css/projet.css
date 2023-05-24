@@ -1,0 +1,191 @@
+.project_h1{
+    display: flex;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border-bottom: #0049bf 1px solid;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+p{
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    text-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin-bottom: 1rem;
+}
+li{
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    text-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin-bottom: 1rem;
+    list-style: circle ;
+}
+.projet{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+    border-bottom: #0049bf 1px solid;
+    padding-bottom: 2rem;
+}
+.projet>div{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.projet p{
+    font-size: 1.5rem;
+    color: #1e1e1e;
+    text-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.img_projet{
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin: 2rem 0 2rem 0;
+}
+.code_snippets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow-x: hidden;
+    
+
+}
+.little_img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.little_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border:  #9f9f9f 1px solid;
+}
+.sql_snip{
+    height: fit-content;
+}
+.grid_4{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+.github{
+    grid-template-columns: 10% 80%;
+    align-content: center;
+    align-items: center;
+
+}
+.git-grid{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+    grid-row: 6/6;
+    grid-column: 2/2;
+    align-self: stretch;
+}
+.git-grid>li{
+    list-style: none;
+}
+.last_item{
+    width: 100%;
+    
+    grid-row: 6/6;
+    grid-column: 2/2;
+    align-self: stretch;
+}
+.annexe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+.annexe>h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.annexe>h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.annexe>pre>code{
+    max-width: 80rem;
+}
+.annexe>img{
+max-width: 80rem;
+}
+.time{
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.save{
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 2rem;
+}
+.save>h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    max-width: 50%;
+    margin: 2rem;
+}
+.save>p{
+    max-width: 50%;
+    margin: 2rem;
+}
+.admin>img{
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+}
+.admin>ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 3rem;
+}
+.admin>ul>li{
+    list-style: none;
+    justify-self: center;
+    align-self: center;
+}
+.admin>ul>li>img{
+    width: 100%;
+}
+.hitec_li{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.hitec_li>li{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    list-style: none;
+}
+.fit{
+    height: fit-content;
+}
